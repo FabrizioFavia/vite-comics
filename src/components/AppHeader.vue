@@ -10,7 +10,7 @@ export default {
         <div class="container-lg d-flex align-items-center">
             <div class="navbar w-100 d-flex justify-content-between align-items-center">
                 <div class="logoContainer">
-                    <img class="headerLogo" src="../assets/dc-logo.png" alt="">
+                    <img class="headerLogo" src="/assets/dc-logo.png" alt="">
                 </div>
                 <div class="navItems d-flex align-items-center">
                     <div class="item">CHARACTERS</div>

@@ -6,7 +6,7 @@ export default {
         return {
             icons: [
                 {
-                    img: "../assets/jumbotron.jpg"
+                    img: "/assets/buy-comics-digital-comics.png"
                 }
             ]
         }
@@ -28,6 +28,6 @@ export default {
 .midNav {
     width: 100%;
     height: 155px;
-    /* background-color: #0282f9; */
+    background-color: #0282f9;
 }
 </style>
