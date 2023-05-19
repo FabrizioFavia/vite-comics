@@ -6,7 +6,7 @@ export default {
         return {
             icons: [
                 {
-                    img: "../assets/jumbotron.png"
+                    img: "../assets/jumbotron.jpg"
                 }
             ]
         }
@@ -18,8 +18,8 @@ export default {
 <template>
     <div class="midNav d-flex justify-content-center">
 
-        <div class="container-lg d-flex align-items-center border border-dark">
-
+        <div v-for="icon in icons" class="container-lg d-flex align-items-center border border-dark">
+            <img :src="icon.img" alt="">
         </div>
     </div>
 </template>
