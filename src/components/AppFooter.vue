@@ -16,7 +16,7 @@ export default {
 .topFooter {
     width: 100%;
     height: 459px;
-    background-image: url("../assets/footer-bg.jpg");
+    background-image: url("/assets/footer-bg.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
