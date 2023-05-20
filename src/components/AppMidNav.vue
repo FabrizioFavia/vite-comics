@@ -15,7 +15,7 @@ export default {
                 },
                 {
                     img: "/assets/buy-comics-subscriptions.png",
-                    dscrpt: "SUBSCRIPTIONS"
+                    dscrpt: "SUBSCRIPTION"
                 },
                 {
                     img: "/assets/buy-comics-shop-locator.png",
@@ -23,7 +23,8 @@ export default {
                 },
                 {
                     img: "/assets/buy-dc-power-visa.svg",
-                    dscrpt: "DC POWER VISA"
+                    dscrpt: "DC POWER VISA",
+                    width: "big"
                 },
             ]
         }
@@ -36,10 +37,9 @@ export default {
     <div class="midNav d-flex justify-content-center">
 
         <div v-for="icon in icons" class="imgbox d-flex align-items-center justify-content-center">
-            <div class="imgcontainer d-flex align-items-center">
-                <img :src="icon.img" alt="icon" class="white-text"> {{ icon.dscrpt }}
-            </div>
-
+            <img :class="icon.dscrpt == `DC POWER VISA` ? `imgCustom` : ` img`" :src="icon.img" alt="icon"
+                class="white-text">
+            <a class="text-white" href="">{{ icon.dscrpt }}</a>
         </div>
     </div>
 </template>
@@ -49,19 +49,32 @@ export default {
     width: 100%;
     height: 155px;
     background-color: #0282f9;
+    position: relative;
+    z-index: 4;
 }
 
 .imgbox {
     width: 270px;
-    justify-content: flex-start;
+    color: white;
+    font-size: 16px;
 }
 
 .imgcontainer {
     color: white;
+    font-size: 16px;
 }
 
-img {
-    height: 50px;
+.img {
+    height: 55px;
     padding-right: 20px;
+}
+
+.imgCustom {
+    height: 40px;
+    padding-right: 20px;
+}
+
+a {
+    text-decoration: none;
 }
 </style>

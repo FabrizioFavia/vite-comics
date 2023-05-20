@@ -51,8 +51,9 @@ header {
 div.item {
     margin: 0 10px;
     height: 115px;
-    font-size: 12px;
-    font-weight: bold;
+    font-size: 14px;
+    font-weight: 500;
+    ;
 }
 
 .item:hover {
