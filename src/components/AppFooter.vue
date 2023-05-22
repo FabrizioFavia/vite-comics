@@ -88,6 +88,21 @@ export default {
     font-weight: bold;
 }
 
+.logoContainer {
+
+    padding-bottom: 100px;
+    position: relative;
+
+}
+
+img {
+    width: 103%;
+    position: absolute;
+    top: -29%;
+    z-index: 1;
+    opacity: 80%;
+}
+
 ul {
     list-style-type: none;
     padding-left: 0;
@@ -117,20 +132,3 @@ li>a {
 }
 </style>
 
-<style lang="scss">
-@use "../main.scss" as *;
-
-.logoContainer {
-
-    padding-bottom: 100px;
-    position: relative;
-
-    img {
-        width: 103%;
-        position: absolute;
-        top: -29%;
-        z-index: 1;
-        opacity: 80%;
-    }
-}
-</style>
