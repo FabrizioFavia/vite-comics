@@ -1,12 +1,7 @@
 <script>
 export default {
     name: "AppMidNav",
-    props: ["icons"],
-
-    data() {
-        return {
-        }
-    }
+    props: ["icons"]
 }
 </script>
 

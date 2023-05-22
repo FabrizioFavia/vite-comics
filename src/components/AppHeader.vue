@@ -1,6 +1,13 @@
 <script>
 export default {
-    name: "AppHeader"
+    name: "AppHeader",
+    props: ["navItems"],
+
+    data() {
+        return {
+
+        }
+    }
 }
 </script>
 
@@ -13,16 +20,7 @@ export default {
                     <img class="headerLogo" src="/assets/dc-logo.png" alt="">
                 </div>
                 <div class="navItems d-flex align-items-center">
-                    <div class="item">CHARACTERS</div>
-                    <div class="item">COMICS</div>
-                    <div class="item">MOVIES</div>
-                    <div class="item">TV</div>
-                    <div class="item">GAMES</div>
-                    <div class="item">COLLECTIBLES</div>
-                    <div class="item">VIDEOS</div>
-                    <div class="item">FANS</div>
-                    <div class="item">NEWS</div>
-                    <div class="item">SHOP</div>
+                    <div v-for="item in navItems" class="item">{{ item }}</div>
                 </div>
             </div>
         </div>

@@ -112,6 +112,9 @@ export default {
           dscrpt: "DC POWER VISA",
           width: "big"
         },
+      ],
+      navItems: [
+        "CHARACTERS", "COMICS", "MOVIES", "TV", "GAMES", "COLLECTIBLES", "VIDEOS", "FANS", "NEWS", "SHOP"
       ]
     }
   }
@@ -120,7 +123,7 @@ export default {
 </script>
 
 <template>
-  <AppHeader />
+  <AppHeader :navItems="navItems" />
   <AppJumbotron />
   <AppMain :comics="comics" />
   <AppMidNav :icons="icons" />
