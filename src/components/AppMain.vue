@@ -1,7 +1,7 @@
 <script>
 export default {
     name: "AppMain",
-    props: ["comics"]
+    props: ["comics"],
 }
 </script>
 
@@ -13,7 +13,7 @@ export default {
                 <template v-for="comic in comics">
                     <div class="comic">
                         <img class="comicImg" :src="comic.thumb" alt="">
-                        <h3>{{ comic.series }}</h3>
+                        <p class="mt-3 text-white">{{ comic.series.toUpperCase() }}</p>
                     </div>
                 </template>
             </div>
@@ -33,10 +33,16 @@ export default {
 
 <style scoped>
 .comic {
-    width: 190px;
+    width: 180px;
     height: 240px;
-    border: 1px solid white;
-    margin-top: 3em;
+    margin-top: 2em;
     margin-left: 1em;
+}
+
+.comicImg {
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+    object-position: top;
 }
 </style>
