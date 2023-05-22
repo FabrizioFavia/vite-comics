@@ -7,24 +7,19 @@ export default {
 
 <template>
     <div class="jumboBox">
-        <img src="/assets/jumbotron.jpg" alt="">
+        <img class="jumbo" src="/assets/jumbotron.jpg" alt="">
     </div>
 </template>
 
 <style lang="scss">
 @use "../main.scss" as *;
 
-main {
-    width: 100%;
-    min-height: 130px;
-    background-color: #222;
-}
 
 .jumboBox {
-    max-height: 300px;
+    max-height: 410px;
 
-    img {
-        max-height: 300px;
+    .jumbo {
+        max-height: 410px;
         width: 100%;
         object-fit: cover;
         object-position: top;

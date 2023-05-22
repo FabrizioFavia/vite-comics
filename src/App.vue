@@ -3,18 +3,20 @@ import AppHeader from './components/AppHeader.vue'
 import AppJumbotron from './components/AppJumbotron.vue'
 import AppMidNav from './components/AppMidNav.vue'
 import AppFooter from './components/AppFooter.vue'
+import AppMain from './components/AppMain.vue'
 
 
 export default {
   components: {
     AppHeader,
     AppJumbotron,
+    AppMain,
     AppMidNav,
     AppFooter,
 
     data() {
       return {
-        comicsImg: [
+        comics: [
           {
             "thumb": "https://www.coverbrowser.com/image/action-comics/1-1.jpg",
             "price": "$19.99",
@@ -97,6 +99,7 @@ export default {
 <template>
   <AppHeader />
   <AppJumbotron />
+  <AppMain :comics="comics" />
   <AppMidNav />
   <AppFooter />
 </template>
