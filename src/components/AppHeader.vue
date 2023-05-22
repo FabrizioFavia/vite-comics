@@ -43,6 +43,7 @@ header {
     height: 75px;
 }
 
+
 .navItems {
     height: 115px;
     line-height: 110px;

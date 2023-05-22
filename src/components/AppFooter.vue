@@ -108,25 +108,29 @@ li>a {
     color: rgb(140, 141, 137);
 }
 
-.logoContainer {
-
-    padding-bottom: 100px;
-    position: relative;
-}
-
-img {
-    width: 103%;
-    position: absolute;
-    top: -29%;
-    z-index: 1;
-    opacity: 80%;
-}
-
 .bottomFooter {
     width: 100%;
     height: 110px;
     background-color: #303030;
     z-index: 2;
     position: absolute;
+}
+</style>
+
+<style lang="scss">
+@use "../main.scss" as *;
+
+.logoContainer {
+
+    padding-bottom: 100px;
+    position: relative;
+
+    img {
+        width: 103%;
+        position: absolute;
+        top: -29%;
+        z-index: 1;
+        opacity: 80%;
+    }
 }
 </style>

@@ -34,18 +34,22 @@ export default {
     position: absolute;
 }
 
+h4>a {
+    font-weight: bold;
+    text-decoration: none;
+}
+</style>
+
+<style lang="scss">
+@use "../main.scss" as *;
+
 button {
     background-color: #303030;
-    border: 2px solid #0282f9;
+    border: 2px solid $primaryColor;
     font-size: 20px;
 }
 
 button:hover {
-    background-color: #0282f9;
-}
-
-h4>a {
-    font-weight: bold;
-    text-decoration: none;
+    background-color: $primaryColor;
 }
 </style>
