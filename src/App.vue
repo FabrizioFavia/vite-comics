@@ -89,6 +89,29 @@ export default {
           "series": "Catwoman",
           "type": "graphic novel",
         },
+      ],
+      icons: [
+        {
+          img: "/assets/buy-comics-digital-comics.png",
+          dscrpt: "DIGITAL COMICS"
+        },
+        {
+          img: "/assets/buy-comics-merchandise.png",
+          dscrpt: "DC MERCHANDISE"
+        },
+        {
+          img: "/assets/buy-comics-subscriptions.png",
+          dscrpt: "SUBSCRIPTION"
+        },
+        {
+          img: "/assets/buy-comics-shop-locator.png",
+          dscrpt: "COMIC SHOP LOCATOR"
+        },
+        {
+          img: "/assets/buy-dc-power-visa.svg",
+          dscrpt: "DC POWER VISA",
+          width: "big"
+        },
       ]
     }
   }
@@ -100,7 +123,7 @@ export default {
   <AppHeader />
   <AppJumbotron />
   <AppMain :comics="comics" />
-  <AppMidNav />
+  <AppMidNav :icons="icons" />
   <AppFooter />
 </template>
 
